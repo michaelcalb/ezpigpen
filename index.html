@@ -13,51 +13,38 @@
             <p>Simple and interactive Pigpen cipher decoder</p>
     </header>
     <hr>
-    <main>
-        <div id="pigpen">
-            <!--Square-->
-            <div id="square" style="display: inline-block;">
-                <div id="square-top" >
-                    <img src="images/cornergrid.png" alt="">
-                    <img src="images/midgrid.png" alt="" style="margin: 0px -22px">
-                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(90deg)">
-                </div>
-                <div id="square-mid" style="margin: -22px">
-                    <img src="images/midgrid.png" alt="" style="transform: rotateZ(-90deg);">
-                    <img src="images/centergrid.png" alt="" style="margin: 0px -22px">
-                    <img src="images/midgrid.png" alt="" style="transform: rotateZ(90deg)">
-                </div>
-                <div id="square-bot">
-                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-90deg);">
-                    <img src="images/midgrid.png" alt="" style="transform: rotateZ(180deg); margin: 0px -22px">
-                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(180deg);">
-                </div>
-            </div>
-            <!--X-->
-            <div id="x" style="display: inline-block;">
-                <div id="x-top">
-                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(45deg); margin-bottom: -65px;">
-                </div>
-                <div id="x-mid" style="margin: -16px">
-                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-45deg); margin-right: 60px;">
-                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(135deg);">
-                </div>
-                <div id="x-bot">
-                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-135deg); margin-top: -65px;">
-                </div>
-            </div>
+
+    <div id="pigpen">
+        <div id="hashtag">
+            <img src="images/hashtag.png" alt="hashtag-shape" usemap="#hashtag-map">
+            <map name="hashtag-map">
+                <area shape="rect" coords="-1,-1,135,135" href="#" alt="">
+                <area shape="rect" coords="153,-1,279,135" href="#" alt="">
+                <area shape="rect" coords="297,-3,432,135" href="#" alt="">
+                <area shape="rect" coords="0,153,136,279" href="#" alt="">
+                <area shape="rect" coords="153,153,279,279" href="#" alt="">
+                <area shape="rect" coords="297,153,423,279" href="#" alt="">
+                <area shape="rect" coords="-2,296,135,432" href="#" alt="">
+                <area shape="rect" coords="152,297,281,434" href="#" alt="">
+                <area shape="rect" coords="297,297,434,433" href="#" alt="">
+            </map>
         </div>
-        <div id="result">
-            Wainting for inputs...
+
+        <div id="x">
+            <img src="images/x.png" alt="x-shape" usemap="#x-map">
+            <map name="x-map">
+                <area shape="poly" coords="216,202 416,3 14,1" href="#" alt="">
+                <area shape="poly" coords="-7,426 203,216 0,13" href="#" alt="">
+                <area shape="poly" coords="230,217 431,416 431,15" href="#" alt="">
+                <area shape="poly" coords="215,229 14,431 421,432" href="#" alt="">
+            </map>
         </div>
-    </main>
-    <aside>
-        <p>Obs.: Trying to use the website on a vertical screen (AKA on mobile) may break the layout. This problem will be solved soon. </p>
-    </aside>
+    </div>
+
     <hr>
     <footer>
         <p>Made with &#x2764 by <a target="_blank" href="https://github.com/michaelcalb">Michas</a></p>
-        <script src="script.js"></script>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

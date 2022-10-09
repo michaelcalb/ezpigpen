@@ -9,18 +9,18 @@ body {
     background-color: rgb(87, 72, 72);
 }
 
-div#pigpen {
+#pigpen {
     min-width: 300px;
     max-width: 1200px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: auto;
-    padding: 30px;
+    padding: 50px;
 }
 
-img:hover {
-    background-color: rgba(0, 255, 255, 0.226);
+#hashtag,#x {
+    display: inline-block;
 }
 
-img:active {
-    background-color: aqua;
+#pigpen img {
+    width: 100%;
 }
