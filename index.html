@@ -18,33 +18,42 @@
         <div id="hashtag">
             <img src="images/hashtag.png" alt="hashtag-shape" usemap="#hashtag-map">
             <map name="hashtag-map">
-                <area shape="rect" coords="-1,-1,135,135" href="#" alt="">
-                <area shape="rect" coords="153,-1,279,135" href="#" alt="">
-                <area shape="rect" coords="297,-3,432,135" href="#" alt="">
-                <area shape="rect" coords="0,153,136,279" href="#" alt="">
-                <area shape="rect" coords="153,153,279,279" href="#" alt="">
-                <area shape="rect" coords="297,153,423,279" href="#" alt="">
-                <area shape="rect" coords="-2,296,135,432" href="#" alt="">
-                <area shape="rect" coords="152,297,281,434" href="#" alt="">
-                <area shape="rect" coords="297,297,434,433" href="#" alt="">
+                <area shape="rect" coords="-1,-1,135,135" href="#" alt="" onclick="pigpen('a','j')">
+                <area shape="rect" coords="153,-1,279,135" href="#" alt="" onclick="pigpen('b','k')">
+                <area shape="rect" coords="297,-3,432,135" href="#" alt="" onclick="pigpen('c','l')">
+                <area shape="rect" coords="0,153,136,279" href="#" alt="" onclick="pigpen('d','m')">
+                <area shape="rect" coords="153,153,279,279" href="#" alt="" onclick="pigpen('e','n')">
+                <area shape="rect" coords="297,153,423,279" href="#" alt="" onclick="pigpen('f','o')">
+                <area shape="rect" coords="-2,296,135,432" href="#" alt="" onclick="pigpen('g','p')">
+                <area shape="rect" coords="152,297,281,434" href="#" alt="" onclick="pigpen('h','q')">
+                <area shape="rect" coords="297,297,434,433" href="#" alt="" onclick="pigpen('i','r')">
             </map>
         </div>
 
         <div id="x">
             <img src="images/x.png" alt="x-shape" usemap="#x-map">
             <map name="x-map">
-                <area shape="poly" coords="216,202 416,3 14,1" href="#" alt="">
-                <area shape="poly" coords="-7,426 203,216 0,13" href="#" alt="">
-                <area shape="poly" coords="230,217 431,416 431,15" href="#" alt="">
-                <area shape="poly" coords="215,229 14,431 421,432" href="#" alt="">
+                <area shape="poly" coords="216,202 416,3 14,1" href="#" alt="" onclick="pigpen('s','w')">
+                <area shape="poly" coords="-7,426 203,216 0,13" href="#" alt="" onclick="pigpen('t','x')">
+                <area shape="poly" coords="230,217 431,416 431,15" href="#" alt="" onclick="pigpen('u','y')">
+                <area shape="poly" coords="215,229 14,431 421,432" href="#" alt="" onclick="pigpen('v','z')">
             </map>
         </div>
     </div>
-
+    <div id="confirm">
+        <input type="button" value="Confirm" onclick="conf()">
+    </div>
+    <div>
+        <p id="result">Waiting input...</p>
+    </div>
     <hr>
     <footer>
         <p>Made with &#x2764 by <a target="_blank" href="https://github.com/michaelcalb">Michas</a></p>
     </footer>
     <script src="script.js"></script>
+    <script src="imageMapResizer.min.js"></script>
+    <script>
+        imageMapResize();
+    </script>
 </body>
 </html>

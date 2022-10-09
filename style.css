@@ -24,3 +24,8 @@ body {
 #pigpen img {
     width: 100%;
 }
+
+#result {
+    background-color: white;
+    padding: 20px;
+}
