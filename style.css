@@ -5,4 +5,22 @@
     text-align: center;
 }
 
-/* transform: rotateZ(00deg) */
+body {
+    background-color: rgb(87, 72, 72);
+}
+
+div#pigpen {
+    min-width: 300px;
+    max-width: 1200px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+}
+
+img:hover {
+    background-color: rgba(0, 255, 255, 0.226);
+}
+
+img:active {
+    background-color: aqua;
+}

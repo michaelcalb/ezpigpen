@@ -14,39 +14,46 @@
     </header>
     <hr>
     <main>
-        <!--Square-->
-        <div id="square" >
-            <div id="square-top" >
-                <img src="images/cornergrid.png" alt="">
-                <img src="images/midgrid.png" alt="" style="margin: 0px -22px">
-                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(90deg)">
+        <div id="pigpen">
+            <!--Square-->
+            <div id="square" style="display: inline-block;">
+                <div id="square-top" >
+                    <img src="images/cornergrid.png" alt="">
+                    <img src="images/midgrid.png" alt="" style="margin: 0px -22px">
+                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(90deg)">
+                </div>
+                <div id="square-mid" style="margin: -22px">
+                    <img src="images/midgrid.png" alt="" style="transform: rotateZ(-90deg);">
+                    <img src="images/centergrid.png" alt="" style="margin: 0px -22px">
+                    <img src="images/midgrid.png" alt="" style="transform: rotateZ(90deg)">
+                </div>
+                <div id="square-bot">
+                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-90deg);">
+                    <img src="images/midgrid.png" alt="" style="transform: rotateZ(180deg); margin: 0px -22px">
+                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(180deg);">
+                </div>
             </div>
-            <div id="square-mid" style="margin: -22px">
-                <img src="images/midgrid.png" alt="" style="transform: rotateZ(-90deg);">
-                <img src="images/centergrid.png" alt="" style="margin: 0px -22px">
-                <img src="images/midgrid.png" alt="" style="transform: rotateZ(90deg)">
-            </div>
-            <div id="square-bot">
-                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-90deg);">
-                <img src="images/midgrid.png" alt="" style="transform: rotateZ(180deg); margin: 0px -22px">
-                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(180deg);">
+            <!--X-->
+            <div id="x" style="display: inline-block;">
+                <div id="x-top">
+                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(45deg); margin-bottom: -65px;">
+                </div>
+                <div id="x-mid" style="margin: -16px">
+                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-45deg); margin-right: 60px;">
+                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(135deg);">
+                </div>
+                <div id="x-bot">
+                    <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-135deg); margin-top: -65px;">
+                </div>
             </div>
         </div>
-        <!--X-->
-        <div id="x">
-            <div id="x-top">
-                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(45deg); margin-bottom: -65px;">
-            </div>
-            <div id="x-mid" style="margin: -16px">
-                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-45deg); margin-right: 60px;">
-                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(135deg);">
-            </div>
-            <div id="x-bot">
-                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-135deg); margin-top: -65px;">
-            </div>
+        <div id="result">
+            Wainting for inputs...
         </div>
-        <p>Obs.: Trying to use the website on a vertical screen (AKA on mobile) may break the layout. This problem will be solved soon. </p>
     </main>
+    <aside>
+        <p>Obs.: Trying to use the website on a vertical screen (AKA on mobile) may break the layout. This problem will be solved soon. </p>
+    </aside>
     <hr>
     <footer>
         <p>Made with &#x2764 by <a target="_blank" href="https://github.com/michaelcalb">Michas</a></p>
