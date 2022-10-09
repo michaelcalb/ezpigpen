@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>EZPIGPEN</title>
+</head>
+<body>
+    <header>
+        <h1>EZPIGPEN</h1>
+            <p>Simple and interactive Pigpen cipher decoder</p>
+    </header>
+    <hr>
+    <main>
+        <!--Square-->
+        <div id="square">
+            <div id="square_top">
+                <img src="images/cornergrid.png" alt="">
+                <img src="images/midgrid.png" alt="">
+                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(90deg)">
+            </div>
+            <div id="square_mid">
+                <img src="images/midgrid.png" alt="" style="transform: rotateZ(-90deg);">
+                <img src="images/centergrid.png" alt="">
+                <img src="images/midgrid.png" alt="" style="transform: rotateZ(90deg)">
+            </div>
+            <div id="square_bot">
+                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-90deg);">
+                <img src="images/midgrid.png" alt="" style="transform: rotateZ(180deg);">
+                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(180deg);">
+            </div>
+        </div>
+        <!--X-->
+        <div id="x">
+            <div id="x_top">
+                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(45deg);">
+            </div>
+            <div id="x_mid">
+                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-45deg);">
+                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(135deg);">
+            </div>
+            <div id="x_bot">
+                <img src="images/cornergrid.png" alt="" style="transform: rotateZ(-135deg);">
+            </div>
+        </div>
+        <p>Obs.: Trying to use the website on a vertical screen (AKA on mobile) may break the layout. This problem will be solved soon. </p>
+    </main>
+    <hr>
+    <footer>
+        <p>Made with &#x2764 by <a target="_blank" href="https://github.com/michaelcalb">Michas</a></p>
+        <script src="script.js"></script>
+    </footer>
+</body>
+</html>
