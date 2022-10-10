@@ -13,35 +13,47 @@
             <p>Simple and interactive Pigpen cipher decoder</p>
     </header>
 
-    <main id="pigpen">
-        <div id="hashtag">
-            <img src="images/hashtag.png" alt="hashtag-shape" usemap="#hashtag-map">
-            <map name="hashtag-map">
-                <area shape="rect" coords="-1,-1,135,135" onclick="onetime('a')" ondblclick="twotimes('j')">
-                <area shape="rect" coords="153,-1,279,135" onclick="onetime('b')" ondblclick="twotimes('k')">
-                <area shape="rect" coords="297,-3,432,135" onclick="onetime('c')" ondblclick="twotimes('l')">
-                <area shape="rect" coords="0,153,136,279" onclick="onetime('d')" ondblclick="twotimes('m')">
-                <area shape="rect" coords="153,153,279,279" onclick="onetime('e')" ondblclick="twotimes('n')">
-                <area shape="rect" coords="297,153,423,279" onclick="onetime('f')" ondblclick="twotimes('o')">
-                <area shape="rect" coords="-2,296,135,432" onclick="onetime('g')" ondblclick="twotimes('p')">
-                <area shape="rect" coords="152,297,281,434" onclick="onetime('h')" ondblclick="twotimes('q')">
-                <area shape="rect" coords="297,297,434,433" onclick="onetime('i')" ondblclick="twotimes('r')">
-            </map>
-        </div>
+    <main>
 
-        <div id="x">
-            <img src="images/x.png" alt="x-shape" usemap="#x-map">
-            <map name="x-map">
-                <area shape="poly" coords="216,202 416,3 14,1" onclick="onetime('s')" ondblclick="twotimes('w')">
-                <area shape="poly" coords="-7,426 203,216 0,13" onclick="onetime('t')" ondblclick="twotimes('x')">
-                <area shape="poly" coords="230,217 431,416 431,15" onclick="onetime('u')" ondblclick="twotimes('y')">
-                <area shape="poly" coords="215,229 14,431 421,432" onclick="onetime('v')" ondblclick="twotimes('z')">
-            </map>
+        <div id="decoder">
+            <div id="hashtag">
+                <img src="images/hashtag.png" alt="hashtag-shape" usemap="#hashtag-map">
+                <map name="hashtag-map">
+                    <area shape="rect" coords="-1,-1,135,135" onclick="onetime('a')" ondblclick="twotimes('j')">
+                    <area shape="rect" coords="153,-1,279,135" onclick="onetime('b')" ondblclick="twotimes('k')">
+                    <area shape="rect" coords="297,-3,432,135" onclick="onetime('c')" ondblclick="twotimes('l')">
+                    <area shape="rect" coords="0,153,136,279" onclick="onetime('d')" ondblclick="twotimes('m')">
+                    <area shape="rect" coords="153,153,279,279" onclick="onetime('e')" ondblclick="twotimes('n')">
+                    <area shape="rect" coords="297,153,423,279" onclick="onetime('f')" ondblclick="twotimes('o')">
+                    <area shape="rect" coords="-2,296,135,432" onclick="onetime('g')" ondblclick="twotimes('p')">
+                    <area shape="rect" coords="152,297,281,434" onclick="onetime('h')" ondblclick="twotimes('q')">
+                    <area shape="rect" coords="297,297,434,433" onclick="onetime('i')" ondblclick="twotimes('r')">
+                </map>
+            </div>
+            <div id="x">
+                <img src="images/x.png" alt="x-shape" usemap="#x-map">
+                <map name="x-map">
+                    <area shape="poly" coords="216,202 416,3 14,1" onclick="onetime('s')" ondblclick="twotimes('w')">
+                    <area shape="poly" coords="-7,426 203,216 0,13" onclick="onetime('t')" ondblclick="twotimes('x')">
+                    <area shape="poly" coords="230,217 431,416 431,15" onclick="onetime('u')" ondblclick="twotimes('y')">
+                    <area shape="poly" coords="215,229 14,431 421,432" onclick="onetime('v')" ondblclick="twotimes('z')">
+                </map>
+            </div>
         </div>
 
         <div id="inputs">
-            <input type="text" name="" id="text">
-            <input type="button" value="Clear" onclick="cleartext()">
+            <input type="text" readonly id="text">
+            <input type="button" class="butt" value="DELETE" onclick="del()">
+            <input type="button" class="butt" value="CLEAR" onclick="cleartext()">
+        </div>
+
+        <div id="example">
+            <div class="exitem">
+                <p>Single Click = </p><img src="images/example1.png" alt="">
+            </div>
+            <div class="exitem">
+                <p>Double Click = </p><img src="images/example2.png" alt="">
+            </div>
         </div>
     </main>
     
