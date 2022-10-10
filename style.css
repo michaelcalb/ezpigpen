@@ -17,12 +17,17 @@ body {
     padding: 50px;
 }
 
-#hashtag,#x {
-    display: inline-block;
-}
-
 #pigpen img {
     width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+
+#hashtag,#x {
+    position: relative;
+    display: inline-block;
+    background-color: white;
 }
 
 #result {
