@@ -12,9 +12,8 @@
         <h1>EZPIGPEN</h1>
             <p>Simple and interactive Pigpen cipher decoder</p>
     </header>
-    <hr>
 
-    <div id="pigpen">
+    <main id="pigpen">
         <div id="hashtag">
             <img src="images/hashtag.png" alt="hashtag-shape" usemap="#hashtag-map">
             <map name="hashtag-map">
@@ -39,17 +38,17 @@
                 <area shape="poly" coords="215,229 14,431 421,432" onclick="onetime('v')" ondblclick="twotimes('z')">
             </map>
         </div>
-    </div>
-    <div id="confirm">
-        <input type="button" value="Confirm" onclick="conf()">
-    </div>
-    <div>
-        <p id="text">Waiting input...</p>
-    </div>
-    <hr>
+
+        <div id="inputs">
+            <input type="text" name="" id="text">
+            <input type="button" value="Clear" onclick="cleartext()">
+        </div>
+    </main>
+    
     <footer>
         <p>Made with &#x2764 by <a target="_blank" href="https://github.com/michaelcalb">Michas</a></p>
     </footer>
+    
     <script src="script.js"></script>
     <script src="imageMapResizer.min.js"></script>
     <script>
