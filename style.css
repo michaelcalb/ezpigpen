@@ -22,7 +22,7 @@ body {
 }
 
 header {
-    margin: 10px;
+    margin: 10px 0px 50px 0px;
 }
 
 main {
@@ -74,8 +74,6 @@ main img {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-bottom: 10%;
 }
 
 #example img {
@@ -91,6 +89,20 @@ main img {
     margin: 10px;
 }
 
+aside {
+    margin: 5%;
+}
+
+aside input{
+    border: solid 3px rgb(53, 53, 53);
+    border-radius: 5px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 5px;
+    font-size: larger;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+}
+
 footer {
     position: relative;
     bottom: 0px;
@@ -98,9 +110,14 @@ footer {
     background-color: rgb(27, 27, 27);
 }
 
-footer a {
-    color: pink;
+footer abbr {
     text-decoration: none;
+    border: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: pink;
 }
 
 footer a:hover {
