@@ -4,5 +4,5 @@
 Thanks to @zHary27 for the idea and encouragement to make this project possible.
 Made for study porpuses.
 
-<a target="_blank" href="https://michaelcalb.github.io/ezpigpen/
+<a href="https://michaelcalb.github.io/ezpigpen/
 ">EZPIGPEN</a>
